@@ -18,6 +18,7 @@ export const SectionAbout = styled.section`
   display: flex;
   flex-direction: column;
   width: 300px;
+  font-family: "Courier New", Courier, monospace;
 
   .title {
     font-size: 18px;
@@ -62,12 +63,14 @@ export const Img = styled.img`
   background-repeat: no-repeat;
   background-position: center;
 
+  box-shadow: 0px -1px 40px #000000;
+
   margin-top: 40px;
 
   @media (min-width: 1024px) {
-    height: 300px;
-    width: 300px;
-    background-size: 300px;
+    height: 400px;
+    width: 400px;
+    background-size: 400px;
     margin-left: -50px;
     margin-right: 100px;
   }

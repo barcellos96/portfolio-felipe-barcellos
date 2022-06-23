@@ -1,4 +1,4 @@
-import { Container, Button, HeaderContainer } from "./style";
+import { Container, Button, HeaderContainer, Title, ArrowDown } from "./style";
 
 const Header = () => {
   return (
@@ -20,6 +20,21 @@ const Header = () => {
           <a href="#contact">CONTATO</a>
         </Button>
       </HeaderContainer>
+
+      <Title>
+        <h1>Felipe Barcellos</h1>
+        <h2>Desenvolvedor Front-End</h2>
+
+        {/* window.scroll(0, 980) */}
+
+        <ArrowDown
+          onClick={(e) =>
+            console.log(
+              e.pageY < 750 ? window.scroll(0, 650) : window.scroll(0, 980)
+            )
+          }
+        ></ArrowDown>
+      </Title>
     </Container>
   );
 };

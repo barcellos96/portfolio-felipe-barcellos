@@ -10,11 +10,12 @@ const About = () => {
         <section>
           <h2 className="name">Felipe Barcellos</h2>
           <p className="about-me">
-            “Psicólogo de formação, entusiasta de tecnologia e apaixonado por
-            aprender, acredito que devemos aproveitar para aprender cada vez
-            mais sempre que pudermos. Dito isto, estou ingressando na carreira
-            de tecnologia afim de adquirir mais conhecimentos e experiências e
-            encontrar soluções para os problemas”
+            “Entusiasta de tecnologia e apaixonado por aprender, acredito que
+            devemos aprender cada vez mais. Ingressando na carreira de
+            tecnologia afim de adquirir mais conhecimentos e experiências Na
+            área da tecnologia, estou com o JavaScript a 1 ano e tenho mais de
+            1.000 horas de curso intensivo para Front-End. No momento estou
+            ingressando na área de Back-end com Express, Node.js e PostgreSQL. ”
           </p>
         </section>
       </SectionAbout>
