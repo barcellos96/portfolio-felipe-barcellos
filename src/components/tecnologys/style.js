@@ -3,7 +3,14 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   min-height: 80vh;
-  background-color: #dfe1e0;
+  background-image: linear-gradient(
+    to bottom,
+    #dfe1e0,
+    #dfe1e0,
+    #dfe1e0,
+    #dfe1e0,
+    rgba(72, 154, 194, 0.8)
+  );
   justify-content: center;
 `;
 
@@ -29,6 +36,14 @@ export const Content = styled.div`
     h1 {
       font-size: 35px;
       width: 750px;
+    }
+  }
+
+  @media (min-width: 1980px) {
+    h1 {
+      font-size: 90px;
+      width: 1350px;
+      height: 290px;
     }
   }
 `;
@@ -86,6 +101,15 @@ export const List = styled.section`
     ul {
       height: 300px;
       width: 300px;
+    }
+  }
+
+  @media (min-width: 1980px) {
+    width: 1750px;
+    ul {
+      height: 650px;
+      width: 650px;
+      font-size: 45px;
     }
   }
 `;

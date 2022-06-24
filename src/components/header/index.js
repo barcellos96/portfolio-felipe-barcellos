@@ -25,8 +25,6 @@ const Header = () => {
         <h1>Felipe Barcellos</h1>
         <h2>Desenvolvedor Front-End</h2>
 
-        {/* window.scroll(0, 980) */}
-
         <ArrowDown
           onClick={(e) =>
             console.log(

@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
 
-  background-image: url("https://www.notik.ru/content/img/1590125432_01-laptop-for-coding.jpg");
+  background-image: url("https://www.jonathasguerra.com.br//img/hero/1.jpg");
+
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -11,7 +12,7 @@ export const Container = styled.div`
 
 export const HeaderContainer = styled.section`
   display: flex;
-  height: 60px;
+  height: 110px;
   width: 100%;
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
@@ -19,10 +20,15 @@ export const HeaderContainer = styled.section`
   justify-content: space-around;
 
   position: fixed;
-  background: rgb(245, 245, 240, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
+
+  z-index: 100;
 
   @media (min-width: 768px) {
     justify-content: flex-start;
+  }
+
+  @media (min-width: 1980px) {
   }
 `;
 
@@ -31,31 +37,33 @@ export const Button = styled.div`
   cursor: pointer;
   text-align: center;
   align-items: center;
+  justify-content: center;
 
   a {
     height: 30px;
 
-    color: rgba(235, 198, 120);
+    color: #fff;
 
     font-size: 14px;
     font-style: none;
     text-decoration: none;
 
-    transition-delay: 0s;
-    transition-duration: 0.3s;
+    transition-duration: 0.4s;
     transition-property: all;
     transition-timing-function: ease-in-out;
   }
 
   a:hover {
-    color: black;
+    color: rgba(235, 198, 120);
     transform: scale(1.1);
   }
 
   @media (min-width: 768px) {
     a {
       padding-left: 50px;
-      font-size: 14px;
+      padding-right: 50px;
+      font-size: 20px;
+      font-weight: normal;
     }
   }
 
@@ -65,52 +73,72 @@ export const Button = styled.div`
       font-size: 22px;
     }
   }
+
+  @media (min-width: 1980px) {
+    a {
+      padding-left: 70px;
+      font-size: 42px;
+    }
+  }
 `;
 
 export const Title = styled.div`
-  margin-top: 60px;
   width: 100%;
-  background-color: black;
-  opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0.3);
 
   h1 {
     font-size: 30px;
     letter-spacing: 1px;
     position: absolute;
     color: white;
-    left: 1%;
-    top: 20%;
+    left: 5%;
+    top: 205px;
   }
   h2 {
     font-size: 15px;
     letter-spacing: 2px;
     position: absolute;
     color: white;
-    left: 2%;
-    top: 30%;
+    left: 5%;
+    background-color: rgba(235, 198, 120);
+
+    top: 255px;
   }
 
   @media (min-width: 768px) {
-    h1 {
-      font-size: 50px;
-      left: 5%;
-    }
-
+    h1,
     h2 {
+      left: 40%;
+    }
+    h1 {
+      top: 215px;
+    }
+    h2 {
+      top: 265px;
       font-size: 20px;
-      left: 5%;
     }
   }
 
   @media (min-width: 1240px) {
     h1 {
       font-size: 50px;
-      left: 70%;
     }
 
     h2 {
+      top: 295px;
       font-size: 25px;
-      left: 70%;
+    }
+  }
+
+  @media (min-width: 1980px) {
+    h1 {
+      font-size: 130px;
+      top: 295px;
+    }
+
+    h2 {
+      font-size: 65px;
+      top: 515px;
     }
   }
 `;
@@ -129,6 +157,12 @@ export const ArrowDown = styled.img`
   background-size: cover;
 
   border: none;
+
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 5px 5px 15px 5px gray;
+  }
 
   @media (min-width: 768px) {
     height: 100px;

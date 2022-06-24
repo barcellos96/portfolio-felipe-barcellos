@@ -2,8 +2,13 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  min-height: 100vh;
-  background-color: #489ac2;
+  min-height: 95vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(72, 154, 194, 0.8),
+    #489ac2,
+    #dfe1e0
+  );
   box-shadow: 0px -1px 25px #000000;
   align-items: center;
   justify-content: center;
@@ -50,6 +55,22 @@ export const SectionAbout = styled.section`
       font-size: 22px;
     }
   }
+  @media (min-width: 1980px) {
+    .title {
+      font-size: 52px;
+      margin-bottom: -50px;
+    }
+
+    .name {
+      font-size: 80px;
+      width: 800px;
+    }
+
+    .about-me {
+      font-size: 52px;
+      width: 1000px;
+    }
+  }
 `;
 
 export const Img = styled.img`
@@ -73,5 +94,13 @@ export const Img = styled.img`
     background-size: 400px;
     margin-left: -50px;
     margin-right: 100px;
+  }
+
+  @media (min-width: 1980px) {
+    height: 720px;
+    width: 720px;
+    background-size: 720px;
+    margin-left: -550px;
+    margin-right: 180px;
   }
 `;
