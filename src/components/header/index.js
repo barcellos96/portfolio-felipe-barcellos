@@ -1,4 +1,5 @@
-import { Container, Button, HeaderContainer, Title, ArrowDown } from "./style";
+import { Container, Button, HeaderContainer, Title } from "./style";
+import { IoIosArrowDown } from "react-icons/io";
 
 const Header = () => {
   return (
@@ -25,13 +26,14 @@ const Header = () => {
         <h1>Felipe Barcellos</h1>
         <h2>Desenvolvedor Front-End</h2>
 
-        <ArrowDown
+        <IoIosArrowDown
+          className="arrow-down"
           onClick={(e) =>
             console.log(
               e.pageY < 750 ? window.scroll(0, 650) : window.scroll(0, 980)
             )
           }
-        ></ArrowDown>
+        />
       </Title>
     </Container>
   );

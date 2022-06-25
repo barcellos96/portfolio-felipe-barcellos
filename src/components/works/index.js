@@ -10,7 +10,7 @@ const Works = () => {
 
   return (
     <Container id="works">
-      <h1 className="port-h1">Portfólio:</h1>
+      <h1 className="port-h1">PROJETOS:</h1>
       <Content>
         <CarouselWrapper>
           <Carousel>

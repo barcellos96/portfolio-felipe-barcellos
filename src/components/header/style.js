@@ -3,10 +3,12 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
 
-  background-image: url("https://www.jonathasguerra.com.br//img/hero/1.jpg");
+  /* background-image: url("https://www.jonathasguerra.com.br//img/hero/1.jpg"); */
+  background-image: url("https://i.pinimg.com/originals/63/00/a7/6300a74eae90be4938bb39257e3fe6d9.jpg");
 
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 30%;
   min-height: 100vh;
 `;
 
@@ -84,25 +86,44 @@ export const Button = styled.div`
 
 export const Title = styled.div`
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
 
   h1 {
     font-size: 30px;
     letter-spacing: 1px;
     position: absolute;
-    color: white;
-    left: 5%;
-    top: 205px;
+    color: black;
+    left: 15%;
+    top: 300px;
   }
   h2 {
     font-size: 15px;
     letter-spacing: 2px;
     position: absolute;
     color: white;
-    left: 5%;
+    left: 17%;
     background-color: rgba(235, 198, 120);
 
-    top: 255px;
+    top: 350px;
+  }
+
+  .arrow-down {
+    animation: is-boucing 1s ease-in-out alternate infinite;
+
+    position: absolute;
+    top: 450px;
+    left: 37%;
+
+    height: 100px;
+    width: 100px;
+    color: rgba(235, 198, 120);
+
+    cursor: pointer;
+  }
+
+  @keyframes is-boucing {
+    to {
+      transform: translateY(50px);
+    }
   }
 
   @media (min-width: 768px) {
@@ -117,6 +138,9 @@ export const Title = styled.div`
       top: 265px;
       font-size: 20px;
     }
+    .arrow-down {
+      left: 50%;
+    }
   }
 
   @media (min-width: 1240px) {
@@ -127,6 +151,11 @@ export const Title = styled.div`
     h2 {
       top: 295px;
       font-size: 25px;
+    }
+    .arrow-down {
+      height: 150px;
+      width: 150px;
+      left: 45%;
     }
   }
 
@@ -140,33 +169,11 @@ export const Title = styled.div`
       font-size: 65px;
       top: 515px;
     }
-  }
-`;
-
-export const ArrowDown = styled.img`
-  position: absolute;
-  top: 80%;
-  left: 38%;
-  display: flex;
-  height: 80px;
-  width: 80px;
-  border-radius: 50%;
-
-  background-color: beige;
-  background-image: url("https://i.pinimg.com/originals/f5/e3/9b/f5e39b93b7800abf6061558ff82810ae.png");
-  background-size: cover;
-
-  border: none;
-
-  &:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-    box-shadow: 5px 5px 15px 5px gray;
-  }
-
-  @media (min-width: 768px) {
-    height: 100px;
-    width: 100px;
-    left: 46%;
+    .arrow-down {
+      height: 300px;
+      width: 300px;
+      left: 48%;
+      top: 800px;
+    }
   }
 `;

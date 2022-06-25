@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  min-height: 80vh;
+  min-height: 70vh;
   background-image: linear-gradient(
     to bottom,
     rgba(72, 154, 194, 0.8),

@@ -5,7 +5,7 @@ const Tecnologys = () => {
   return (
     <Container id="tecnologys">
       <Content>
-        <h1>Domino as seguintes tecnologias:</h1>
+        <h1>DOMINO AS SEGUINTES TECNOLOGIAS:</h1>
         <List>
           <ul className="front-end">
             <h2>Front-End</h2>
